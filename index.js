@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
     res.end(JSON.stringify({ message: 'Solicitação GET feita com sucesso' }));
   } else {
     res.writeHead(404, {'Content-Type': 'text/plain'});
-    res.end('Servidor conectado com sucesso, experimente a rota "/api"');
+    res.end('Conectado com sucesso');
   }
 });
 
